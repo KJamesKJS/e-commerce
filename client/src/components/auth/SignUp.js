@@ -73,7 +73,7 @@ export default function SignIn() {
           <Typography component="h1" variant="h5" color="common.black">
             Register
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box component="form" onSubmit={handleSubmit} validate="true" sx={{ mt: 1 }}>
           <Grid container spacing={2}>
               <Grid item xs={6} sm={6}>
                 <TextField

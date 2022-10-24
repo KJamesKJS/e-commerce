@@ -44,58 +44,10 @@ export default function SignIn() {
       email: data.get('email'),
       password: data.get('password'),
     });
-    /*
-    fetch('https://fakestoreapi.com/users',{
-        method:"POST",
-        body:JSON.stringify(
-            {
-                email:'shinestar@gmail.com',
-                username:'johnd',
-                password:'m38rmF$',
-                name:{
-                    firstname:'John',
-                    lastname:'Doe'
-                },
-                address:{
-                    city:'kilcoole',
-                    street:'7835 new road',
-                    number:3,
-                    zipcode:'12926-3874',
-                    geolocation:{
-                        lat:'-37.3159',
-                        long:'81.1496'
-                    }
-                },
-                phone:'1-570-236-7033'
-            }
-        )
-    })
-    .then(res=>{ console.log(res.json());})
-    .then(json=>console.log(json));
-    */
-/*
-    fetch('https://fakestoreapi.com/users/6',{
-            method:"DELETE"
-        })
-            .then(res=>res.json())
-            .then(json=>console.log(json));
-*/
-fetch('https://fakestoreapi.com/auth/login',{
-  method:'POST',
-  body:JSON.stringify({
-      username: "mor_2314",
-      password: "83r5^_"
-  })
-})
-  .then(res=>res.json())
-  .then(json=>console.log(json))
-
-    /*
+    
     window.localStorage.setItem("auth_user", true);
     setOpen(false);
     handleNavigateHome();
-    */
-
   };
 
   const [open, setOpen] = React.useState(true);
@@ -125,7 +77,7 @@ fetch('https://fakestoreapi.com/auth/login',{
             <Typography component="h1" variant="h5" color="common.black">
               LogIn
             </Typography>
-            <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+            <Box component="form" onSubmit={handleSubmit} validate="true" sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
                 required
