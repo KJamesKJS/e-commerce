@@ -65,7 +65,7 @@ export default function SignIn() {
           <CssBaseline />
           <Box
             sx={{
-              marginTop: 8,
+              marginTop: 4,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -77,7 +77,7 @@ export default function SignIn() {
             <Typography component="h1" variant="h5" color="common.black">
               LogIn
             </Typography>
-            <Box component="form" onSubmit={handlyeSubmit} validate="true" sx={{ mt: 1 }}>
+            <Box component="form" onSubmit={handleSubmit} validate="true" sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
                 required
@@ -87,6 +87,7 @@ export default function SignIn() {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                size="small"
               />
               <TextField
                 margin="normal"
@@ -97,6 +98,7 @@ export default function SignIn() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                size="small"
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
@@ -128,7 +130,7 @@ export default function SignIn() {
               </Grid>
             </Box>
           </Box>
-          <Copyright sx={{ mt: 8, mb: 4 }} />
+          <Copyright sx={{ mt: 4, mb: 4 }} />
         </Container>
       </ThemeProvider>
     </Dialog>

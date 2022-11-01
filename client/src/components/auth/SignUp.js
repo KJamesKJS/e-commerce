@@ -61,7 +61,7 @@ export default function SignIn() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 4,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -86,6 +86,7 @@ export default function SignIn() {
                   name="firstName"
                   autoComplete="given-name"
                   autoFocus
+                  size="small"
                 />
                 {/* <TextField
                   label="Name"
@@ -108,6 +109,7 @@ export default function SignIn() {
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
+                  size="small"
                 />
               </Grid>
             </Grid>
@@ -120,6 +122,7 @@ export default function SignIn() {
                   name="email"
                   autoComplete="email"
                   autoFocus
+                  size="small"
                 />
                 <TextField
                   margin="normal"
@@ -130,6 +133,7 @@ export default function SignIn() {
                   type="password"
                   id="password"
                   autoComplete="current-password"
+                  size="small"
                 />
               
                 <FormControlLabel
@@ -159,7 +163,7 @@ export default function SignIn() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ mt: 2, mb: 4 }} />
       </Container>
     </ThemeProvider>
     </Dialog>

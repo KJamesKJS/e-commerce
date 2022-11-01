@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Avatar from '@mui/material/Avatar';
-
 const Logo = () => (
+  /*
   <Avatar
     component={Link}
     to='/'
@@ -13,6 +12,9 @@ const Logo = () => (
     loading='lazy'
     variant='rounded'
   />
+  */
+ <img src="../assets/img/logo.png" style={{width:'200px', height:'30px'}}></img>
+  
 );
 
 export default Logo;

@@ -14,18 +14,21 @@ import ThemeContext from '../../context/ThemeContext';
 
 const NavBar = () => {
   const [categories, setCategories] = useState(null);
-  
+  const pages = [`Men's clothing`, `Women's clothing`];
 
   useEffect(() => {
+    /*
     async function fetchData() {
       await fetch(`https://fakestoreapi.com/products/categories`)
       .then(response => response.json())
       .then(category=>{
-        setCategories(category);
+        setCategories([category[2],category[3]]);
       })
       .catch(err => console.error(err));
     }
     fetchData();
+    */
+    setCategories(pages);
   }, []);
   
   return (

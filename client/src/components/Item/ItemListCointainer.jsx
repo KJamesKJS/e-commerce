@@ -17,7 +17,8 @@ const ItemListCointainer = () => {
   useEffect(() => {
     if(user){
       setLoading(true);
-      url = (categoryId) ? `https://fakestoreapi.com/products/category/${categoryId}`:'https://fakestoreapi.com/products';
+      //url = (categoryId) ? `https://fakestoreapi.com/products/category/${categoryId}`:'https://fakestoreapi.com/products';
+      url = (categoryId) ? `https://fakestoreapi.com/products/category/${categoryId}`:`https://fakestoreapi.com/products/category/men's%20clothing`;
       async function fetchData() {
         await fetch(url)
         .then(response => response.json())
